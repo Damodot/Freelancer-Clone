@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/js/bootstrap.bundle.js">
+  <link rel="stylesheet" href="signin.css">
+  <script src="signin.js"></script>
+  <link rel="shortcut icon" href="freecon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>User Signup | Freelancer</title>
+</head>
+<body class="d-flex">
+  <div class="left container-fluid d-flex justify-content-center align-items-center col-8 position-absolute start-0">
+    <section class="container-fluid d-flex flex-column justify-content-center position-absolute align-items-center sect">
+      <img src="freelogo.png" alt="image">
+      <h2 class="text-center fs-4 fw-bolder py-4">Sign up</h2>
+      <button class="btn butt fs-6 d-flex justify-content-around align-items-center pe-5"><img src="googlelogo.png" alt="image">Continue with Google</button>
+      <button class="btn butt fs-6 fw-bold d-flex justify-content-around align-items-center mt-5 pe-5"><img src="facebooklogo.png" alt="image">Continue with Facebook</button>
+      <div class="d-flex align-items-center justify-content-center line mt-6">
+        <hr class="flex-grow-1">
+        <p class="px-3 mt-3">OR</p>
+        <hr class="flex-grow-1">
+      </div>
+      <div class="form-cont">
+        <form action="C:\Users\soft-gate\Desktop\Web Project\login.html" class="form-group">
+            <div class="two-inp mb-3 d-flex justify-content-between">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+          <input type="email" placeholder="Email" class="my-3" required>
+          <input type="password" id="password" class="my-3" placeholder="Password" required>
+          <span class="btn toggle-password" onclick="togglePasswordVisibility()">
+            <img src="visoff.png" alt="Show Password" id="toggle-icon">
+          </span>
+        <div class="word d-flex flex-column justify-content-between align-items-center">
+          <div class="word-cont1 d-flex mt-5">
+            <input type="checkbox" class="mt-2">
+            <span class="fs-6 ms-2">I agree to freelancer <a href="" class="text-decoration-underline">User Agreement</a> and <a href="" class="text-decoration-underline">Privacy Policy</a>.</span>
+          </div>
+        <button class="btn btn-primary log-btn mt-5 fs-5 fw-bolder">Join Freelancer</button> 
+        </form>
+      </div>
+      <hr class="nhr mt-5">
+      <p class="mt-3 fs-6 text-center last">Already have an account? <a href="C:\Users\soft-gate\Desktop\Web Project\login.html">Log in</a></p>
+    </section>
+  </div>
+  <div class="right container-fluid col-4 position-fixed end-0">
+    <img src="real.png" alt="image">
+  </div>
+</body>
+</html>

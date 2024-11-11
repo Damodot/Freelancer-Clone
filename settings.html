@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="settings.css">
+    <script src="settings.js" defer></script>
+    <script src="https://kit.fontawesome.com/bbacfaf443.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="freecon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Freelancer</title>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="w-100 d-flex justify-content-center">
+       <div class="nav-cont h-100 d-flex align-items-center">
+            <button onclick="window.location.href='dashboard.html'" class="nav-btn1 btn h-100 d-flex align-items-center">
+                <img src="freelogowhite.png" alt="img" class="d-lg-block d-md-block d-none">
+                <div class="btn position-absolute d-lg-none d-md-none d-flex align-items-center cheri">
+                    <span class="material-symbols-outlined fs-2 text-white">chevron_left</span>
+                </div>
+            </button>
+            <div class="scd-btn h-100 d-flex ms-2">
+                <button class="nav-btn2 btn d-flex align-items-center justify-content-evenly d-lg-flex d-md-flex d-none position-relative" id="man-show5">    
+                    <span class="material-symbols-outlined fs-5">explore</span>
+                    <span class="fs-6 none">Browse</span>
+                    <div class="man-drop5 position-absolute">
+                        <div class="point5 position-absolute"></div>
+                        <div class="main-man5 bg-white position-absolute">
+                            <div class="inp-cont mt-3 d-flex justify-content-between align-items-center">
+                                <i class="fa-solid fa-magnifying-glass fs-4 ms-4"></i>
+                                <input type="text" placeholder="Search Freelancers.com" class="h-100 fs-6 me-4">
+                            </div>
+                            <div class="search-drop mt-4">
+                                <p class="fs-6 fw-bolder text-start">Search</p>
+                               <div class="search-col w-100 d-flex">
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-3 text-primary">folder_check</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Projects</h5>
+                                            <p class="fs-6 text-start">Explore exciting new project opportunites now!</p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-3 text-primary">emoji_events</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Contests</h5>
+                                            <p class="fs-6 text-start">Unleash your talent and win Freelancer contests!</p>
+                                        </div>
+                                    </div>  
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-3 text-primary">account_circle</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Freelancers</h5>
+                                            <p class="fs-6 text-start">Find top-rated freelancers for your project</p>
+                                        </div>
+                                    </div>  
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-3 text-primary">bookmark</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Bookmarks</h5>
+                                            <p class="fs-6 text-start">Access your saved project and contest opportunites</p>
+                                        </div>
+                                    </div>    
+                               </div>
+                            </div>
+                            <div class="search-drop mt-4">
+                                <p class="fs-6 fw-bolder text-start">Freelancing Tools</p>
+                               <div class="search-col w-100 d-flex">
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-3 text-primary">verified_user</span>
+                                        <div class="ic-wordn ms-2">
+                                            <p class="fs-6 text-start">Verified by Freelancer Increase your chances of winning projects</p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-3 text-warning">star_rate</span>
+                                        <div class="ic-wordn ms-2">
+                                            <p class="fs-6 text-start">Preffered Freelancer Access exclusive project and stand out</p>
+                                        </div>
+                                    </div>  
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <img src="freecon.png" alt="">
+                                        <div class="ic-wordn ms-2">
+                                            <p class="fs-6 text-start">Membership Get earning opportunites and savings</p>
+                                        </div>
+                                    </div>  
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-3 text-primary">school</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Exams</h5>
+                                            <p class="fs-6 text-start">Prove your skills to win more work</p>
+                                        </div>
+                                    </div>    
+                               </div>
+                            </div>
+                            <div class="search-drop mt-4">
+                                <p class="fs-6 fw-bolder text-start">Client Tools</p>
+                               <div class="search-col w-100 d-flex">
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <i class="fa-solid fa-shield fs-5"></i>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Recruiter</h5>
+                                            <p class="fs-6 text-start">Get assistance finding the perfect freelancer</p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <i class="fa-solid fa-flag fs-5"></i>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Technical Co-pilot</h5>
+                                            <p class="fs-6 text-start">Our staff will ensure your project is a success</p>
+                                        </div>
+                                    </div>  
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <i class="fa-solid fa-globe fs-5 text-primary"></i>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Enterprise</h5>
+                                            <p class="fs-6 text-start">Turn your organization's ideas into reality</p>  
+                                        </div>
+                                    </div>  
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <i class="fa-solid fa-location-dot fs-5 text-primary"></i>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Local Jobs</h5>
+                                            <p class="fs-6 text-start">Get help in any location, anywhere in the world</p>
+                                        </div>
+                                    </div>    
+                               </div>
+                            </div>
+                            <div class="search-drop my-4">
+                                <p class="fs-6 fw-bolder text-start">Explore Freelancer</p>
+                               <div class="search-col w-100 d-flex">
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-3 text-warning">diamond</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Showcase</h5>
+                                            <p class="fs-6 text-start">Get inpiration from the world's best</p>
+                                        </div>
+                                    </div>
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-3 text-primary">event_note</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Community</h5>
+                                            <p class="fs-6 text-start">Browse resources for your business and career</p>
+                                        </div>
+                                    </div>  
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-3 text-success">group</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Discover</h5>
+                                            <p class="fs-6 text-start">Discover featured works from our best freelancers</p>
+                                        </div>
+                                    </div>  
+                                    <div class="ic-wrd d-flex align-items-start w-25 justify-content-around">
+                                        <span class="material-symbols-outlined fs-3 text-primary">help</span>
+                                        <div class="ic-wordn ms-2">
+                                            <h5 class="fs-6 text-start hov-blue">Customer Support</h5>
+                                            <p class="fs-6 text-start">Browse the help center or get in touch with us</p>
+                                        </div>
+                                    </div>    
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <button class="nav-btn2 btn d-flex align-items-center justify-content-evenly d-lg-flex d-md-flex d-none position-relative" id="man-show">
+                    <span class="material-symbols-outlined fs-5">work</span>
+                    <span class="fs-6 none">Manage</span>
+                    <div class="man-drop position-absolute">
+                        <div class="point position-absolute"></div>
+                        <div class="main-man bg-white position-absolute">
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-4">
+                                <p class="fs-6 fw-bolder">Recent Projects</p>
+                                <a href="" class="fs-6">View All</a>
+                            </div>
+                            <div class="mana2 mt-2">
+                                <label>You do not have any active projects.</label>
+                                <p><a href="">Create one</a> to get started!</p>
+                            </div>
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-3">
+                                <p class="fs-6 fw-bolder">Lists</p>
+                                <a href="" class="fs-6">View All</a>
+                            </div>
+                            <div class="mana3 d-flex align-items-center">
+                                <div class="hov-grey"></div>
+                              <div class="icon-love d-flex align-items-center">
+                                <i class="fa-regular fa-heart fs-6 ms-3"></i>
+                                <p class="fs-6 ms-3 mt-3">Favorite</p>
+                              </div>
+                            </div>
+                            <div class="mana3 d-flex align-items-center">
+                                <div class="hov-grey"></div>
+                                <div class="icon-love d-flex align-items-center">
+                                    <i class="fa-solid fa-briefcase fs-6 ms-3"></i>
+                                <p class="fs-6 ms-3 mt-3">My Hires</p>
+                                </div>
+                            </div>
+                            <div class="mana3 d-flex align-items-center">
+                                <div class="hov-grey"></div>
+                                <div class="icon-love d-flex align-items-center">
+                                    <i class="fa-regular fa-eye fs-6 ms-3"></i>
+                                    <p class="fs-6 ms-3 mt-3">Recently Viewed</p> 
+                                </div>
+                            </div>
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-3">
+                                <p class="fs-6 fw-bolder">Tasklists</p>
+                                <a href="" class="fs-6">View All</a>
+                            </div>
+                            <div class="mana3 d-flex align-items-center">
+                                <div class="hov-grey"></div>
+                                <div class="icon-love d-flex align-items-center">
+                                    <i class="fa-solid fa-list-check fs-6 ms-3"></i>
+                                    <p class="fs-6 ms-3 mt-3">@damodotun tasklists</p> 
+                                </div>
+                            </div>
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-4">
+                                <p class="fs-6 fw-bolder">Project Updates</p>
+                                <a href="" class="fs-6">View All</a>
+                            </div>
+                            <div class="mana2 mt-2">
+                                <label>You do not have any active projects.</label>
+                                <p><a href="">Browse projects</a> to start work and give updates</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <button class="nav-btn2 btn d-flex align-items-center justify-content-evenly d-lg-flex d-md-flex d-none">
+                    <span class="material-symbols-outlined fs-5">group</span>
+                    <span class="fs-6 none">Groups</span>
+                </button>
+            </div>
+            <div class="nothing"></div>
+            <div class="nxt-cont d-flex">
+                <button class="nav-btn3 btn ms-2 d-flex align-items-center justify-content-evenly d-lg-none d-md-none">
+                    <span class="material-symbols-outlined cha fs-4">info</span>
+                </button>
+                <button class="nav-btn3 btn ms-2 d-flex align-items-center justify-content-evenly position-relative" id="man-show1">
+                    <span class="material-symbols-outlined cha fs-4">notifications</span>
+                    <div class="man-drop1 position-absolute">
+                        <div class="point1 position-absolute"></div>   
+                        <div class="main-man1 bg-white position-absolute">
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-4">
+                                <p class="fs-6 fw-bolder">Notifications</p>
+                            </div>
+                            <i class="fa-regular fa-bell-slash text-primary"></i>
+                            <p class="mt-4">You don't have any notifications as of this moment. <br>
+                                Would you like to search for a project instead?</p>
+                                <div class="btn fs-6 fw-bolder btn-proj">Search Project</div>
+                        </div>
+                    </div>
+                </button>
+                <button class="nav-btn3 btn ms-2 d-flex align-items-center justify-content-evenly position-relative" id="man-show3">
+                    <span class="material-symbols-outlined cha fs-4">folder_open</span>
+                    <div class="man-drop3 position-absolute">
+                        <div class="point3 position-absolute"></div>   
+                        <div class="main-man3 bg-white position-absolute">
+                            <div class="top-shii d-flex">
+                                <div class="lft-folder btn"></div>
+                                <div class="rgt-folder btn"></div>
+                                <div class="settings btn"><span class="material-symbols-outlined text-primary">settings</span>
+                                </div>
+                            </div>
+                            <i class="fa-regular fa-bell-slash text-primary"></i>
+                            <p class="mt-4">You don't have any notifications as of this moment. <br>
+                                Would you like to search for a project instead?</p>
+                                <div class="btn fs-6 fw-bolder btn-proj">Search Project</div>
+                        </div>
+                    </div>
+                </button>
+                <button class="nav-btn3 btn ms-2 d-flex align-items-center justify-content-evenly position-relative" id="man-show2">
+                    <span class="material-symbols-outlined cha fs-4">chat_bubble</span>
+                    <div class="man-drop2 position-absolute">
+                        <div class="point2 position-absolute"></div>   
+                        <div class="main-man2 bg-white position-absolute">
+                            <div class="mana1 d-flex justify-content-between align-items-center mt-4">
+                                <p class="fs-6 fw-bolder">Recent Messages</p>
+                                <a href="" class="fs-6">View All</a>
+                            </div>
+                             <img src="message.png" class="mess" alt=""><br>
+                             <label>Start connecting with others by <a href="">browsing</a> or <a href="">posting a <br> project</a></label>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="hide-not"></div>
+           <div class="last-end align-items-center h-100 d-lg-flex d-md-flex d-none">
+                <div class="pink-btn ms-2">
+                    <button class="nav-btn4 btn d-flex align-items-center justify-content-evenly">
+                        <span class="text-white fw-bolder">Post a Project</span>
+                    </button>
+                </div>
+                <div class="lst-btn ms-2 h-100 d-flex position-relative" id="man-show4">
+                    <button class="btn prof-btn d-flex align-items-center h-100">
+                        <div class="pic"></div>
+                        <div class="prof-word d-flex flex-column align-items-start">
+                            <span class="text-white fs-6 fw-bold ms-2">@damodotun</span>
+                            <span class="text-white fs-6 fw-bold ms-2">$7777.77 USD</span>
+                        </div>
+                        <div class="man-drop4 position-absolute">
+                            <div class="point4 position-absolute"></div>   
+                            <div class="main-man4 bg-white position-absolute">
+                                <p class="fs-6 fw-bolder my-4 text-start ms-4">Account</p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="profile.html" class="hov-orf">View Profile</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="membership.html" class="hov-orf">Membership</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Account Analytics</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Bid Insight</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="settings.html" class="hov-orf">Settings</a></p>
+                                <p class="fs-6 fw-bolder my-4 text-start ms-4">Finances</p>
+                                <div class="balance d-flex justify-content-between">
+                                    <p class="text-start ms-4 fs-6 w-50"><a href="" class="hov-orf">Balance</a></p>
+                                    <p class="me-4 fs-6">$7777.77 USD</p>
+                                </div>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Add funds</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Withdraw funds</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Transaction history</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Financial Dashboard</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Payment sharing</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="" class="hov-orf">Support</a></p>
+                                <p class="text-start ms-4 fs-6 w-75 hov-prof"><a href="index.html" class="hov-orf">Logout</a></p>
+                                <p>App: 52c5b5b (1728954168 / 2024-10-14)</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+           </div>
+       </div>
+    </nav>
+    <!-- Dashboard -->
+    <div class="dash-dis">
+        <aside id="buttonContainer">
+            <div class="but d-flex">
+                <div class="blue-foc d-lg-block d-md-block d-none"></div>
+                <button class="main-tin d-flex align-items-center fs-6" id="togprofbtn" autofocus>
+                    Profile
+                </button>
+            </div>
+            <div class="but1 d-flex">
+                <div class="blue-foc1 d-lg-block d-md-block d-none"></div>
+                <button class="main-tin1 d-flex align-items-center fs-6" id="togprofbtn1">
+                    Email & Notifications
+                </button>
+            </div>
+            <div class="but2 d-flex">
+                <div class="blue-foc2 d-lg-block d-md-block d-none"></div>
+                <button class="main-tin2 d-flex align-items-center fs-6" id="togprofbtn2">
+                    Membership
+                </button>
+            </div>
+            <div class="but3 d-flex">
+                <div class="blue-foc3 d-lg-block d-md-block d-none"></div>
+                <button class="main-tin3 d-flex align-items-center fs-6" id="togprofbtn3">
+                    Password
+                </button>
+            </div>
+            <div class="but4 d-flex">
+                <div class="blue-foc4 d-lg-block d-md-block d-none"></div>
+                <button class="main-tin4 d-flex align-items-center fs-6" id="togprofbtn4">
+                    Payment & Financials
+                </button>
+            </div>
+            <div class="but5 d-flex">
+                <div class="blue-foc5 d-lg-block d-md-block d-none"></div>
+                <button class="main-tin5 d-flex align-items-center fs-6" id="togprofbtn5">
+                    Account Security
+                </button>
+            </div>
+            <div class="but6 d-flex">
+                <div class="blue-foc6 d-lg-block d-md-block d-none"></div>
+                <button class="main-tin6 d-flex align-items-center fs-6" id="togprofbtn6">
+                    Trust & Verification
+                </button>
+            </div>
+            <div class="but7 d-flex">
+                <div class="blue-foc7 d-lg-block d-md-block d-none"></div>
+                <button class="main-tin7 d-flex align-items-center fs-6" id="togprofbtn7">
+                    Account
+                </button>
+            </div>
+        </aside>
+        <div class="div sde-open" id="profbtn">
+            <h3 class="mt-4 ms-4 fs-4 fw-bold">Profile Details</h3>
+           <hr>
+           <div class="two-inp">
+                <h3 class="mt-4 fs-4 fw-bold">Name</h3>
+                <div class="name w-100 justify-content-between mb-5">
+                    <div class="first-name d-block">
+                        <label class="mt-3 fs-6 fw-bold">First name</label>
+                        <input type="text" value="Adedotun" class="fs-6 mt-1 ps-3" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="first-name d-block">
+                        <label class="mt-3 fs-6 fw-bold">Last name</label>
+                        <input type="text" value="Adedeji" class="fs-6 mt-1 ps-3" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+           </div>
+           <hr class="mt-4">
+           <div class="add-inp">
+                <h3 class="mt-4 fs-5 fw-bold">Address</h3>
+                <div class="add-name d-block">
+                    <label class="mt-3 fs-6 fw-bold">Address</label>
+                    <input type="text" value="No 30 Yomade Villa" class="fs-6 mt-1 ps-3" placeholder="Enter your address" required>
+                    <input type="text" value="Soka" class="fs-6 mt-3 ps-3" placeholder="Enter your address" required>
+                    <label class="mt-3 fs-6 fw-bold">City / Town</label>
+                    <input type="text" value="Ibadan" class="fs-6 mt-1 ps-3" placeholder="Enter your city" required>
+                    <div class="name w-100 justify-content-between">
+                        <div class="frt-name d-block">
+                            <label class="mt-3 fs-6 fw-bold">Zip / Postal Code</label>
+                            <input type="text" value="200243" class="fs-6 mt-1 ps-3" placeholder="Enter your zip code" required>
+                        </div>
+                        <div class="frst-name d-block">
+                            <label class="mt-3 fs-6 fw-bold">State / Region</label>
+                            <input type="text" value="OY" class="fs-6 mt-1 ps-3" placeholder="Enter your state" required>
+                        </div>
+                    </div>
+                    <label class="mt-3 fs-6 fw-bold">Country</label>
+                    <input type="text" value="Nigeria" class="fs-6 mt-1 ps-3" placeholder="Enter your Country" required disabled>
+                    <span class="mt-2 fs-6">In order to change your country, we require you to <a href="">verify your identity</a>. This is so we can verify your address details. The country will be automatically updated once the process is complete.</span><br>
+                    <label class="mt-3 fs-6 fw-bold">Company</label>
+                    <input type="text" value="SQI" class="fs-6 mt-1 ps-3" placeholder="Enter your company" required>
+                    <div class="name w-100 justify-content-between mb-5">
+                        <div class="fist-name d-block">
+                            <label class="mt-3 fs-6 fw-bold">Time zone</label>
+                            <input type="text" value="Africa" class="fs-6 mt-1 ps-3" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="fist-name d-block">
+                            <label class="mt-3 fs-6 fw-bold">Location</label>
+                            <input type="text" value="Nigeria" class="fs-6 mt-1 ps-3" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <hr class="mt-4">
+           <div class="two-inp">
+                <h3 class="mt-4 fs-4 fw-bold">Language Settings</h3>
+                <div class="name w-100 mb-5">
+                    <div class="first-name d-block">
+                        <label class="mt-3 fs-6 fw-bold">I want to browse the website in:</label>
+                        <select name="languauge" class="fs-6">
+                            <option value="">Afrikaans</option>
+                            <option value="">Catala</option>
+                            <option value="">Cestina</option>
+                            <option value="">Dansk</option>
+                            <option value="">Deustch</option>
+                            <option value="">English</option>
+                            <option value="">Espanyol</option>
+                            <option value="">Suomi</option>
+                            <option value="">Filipino</option>
+                            <option value="">Francias</option>
+                            <option value="">Magyar</option>
+                            <option value="">Bahasa Indonesia</option>
+                            <option value="">Bahasa Malasia</option>
+                            <option value="">Italiano</option>
+                            <option value="">Norsk-Bokmal</option>
+                            <option value="">Nederlands</option>
+                            <option value="">Polski</option>
+                            <option value="">Portugese</option>
+                            <option value="">Romana</option>
+                            <option value="">Slovenscina</option>
+                            <option value="">Shqip</option>
+                            <option value="">Svenska</option>
+                            <option value="">Kiswahili</option>
+                            <option value="">Turkce</option>
+                            <option value="">Tieng Viet</option>
+                            <option value="">Yoruba</option>
+                        </select>
+                    </div>
+                    <div class="first-name d-block">
+                        <label class="mt-3 fs-6 fw-bold">I want to browse projects in the following languages:</label>
+                        <input type="text" value="English" class="fs-6 mt-1 ps-3" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <button class="btn btn-primary fw-bolder fs-6 ms-4 my-2">
+                Save Settings
+            </button>
+            <hr class="mt-4">
+            <h3 class="mt-4 ms-4 fs-5 fw-bold">Security Phone Number</h3>
+            <p class="ms-4 mt-3 fs-6"><b>Phone: </b>+2347019748865</p>
+            <p class="ms-4 fs-6"><b>Country: </b>Nigeria</p>
+            <button class="btn btn-white lastbtn-prof fw-bolder fs-6 ms-4 my-4">
+                Request to Change
+            </button>
+        </div>
+        <div class="div div1" id="profbtn1">
+            <h3 class="mt-4 ms-4 fs-4 fw-bold">Email & Notifications</h3>
+            <hr>
+           <div class="two-inp">
+                <h3 class="mt-4 fs-5 fw-bold">Email</h3>
+                <div class="name w-100 justify-content-between mb-5">
+                    <div class="first-name d-block">
+                        <label class="mt-3 fs-6 fw-bold">Email</label><br>
+                        <input type="text" value="damodotunadedeji@gmail.com" class="fs-6 mt-1 ps-3" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="first-name d-block">
+                        <label class="mt-3 fs-6 fw-bold">Password</label>
+                        <input type="text" value="" class="fs-6 mt-1 ps-3" required>
+                    </div>
+                </div>
+                <button class="btn btn-white lastbtn-prof fw-bolder fs-6">
+                    Update email address
+                </button>
+           </div>
+           <hr class="mt-4">
+           <h3 class="mt-4 ms-4 fs-5 fw-bold">Email Format</h3>
+           <div class="first-name ms-4 d-block">
+                <label class="mt-3 fs-6 fw-bold">I want to browse the website in:</label>
+                <select name="languauge" class="fs-6">
+                    <option value="">HTML</option>
+                    <option value="">Plain Text</option>
+                </select>
+            </div>
+            <hr class="mt-4">
+            <h3 class="mt-4 ms-4 fs-5 fw-bold">Digest emails for your posted projects</h3>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When a bid is placed/updated/retracted on your project</strong>
+            </div>
+            <h3 class="mt-4 ms-4 fs-6 fw-bold">Email frequency for project related activity</h3>
+           <div class="first-name ms-4 d-block">
+                <select name="languauge" class="fs-6">
+                    <option value="">Default</option>
+                    <option value="">Instantly</option>
+                    <option value="">Every hour</option>
+                    <option value="">Every 3 hour</option>
+                    <option value="">Every 6 hour</option>
+                    <option value="">Every 12 hour</option>
+                    <option value="">Daily</option>
+                </select>
+            </div>
+            <p class="mt-2 mx-4 fs-6">Receive the first 3 notifications immediately. Then project activity summaries after 15, 30 and 45 minutes, then after 2 and 6 hours, and then daily.</p>
+            <hr class="mt-4">
+            <h3 class="mt-4 ms-4 fs-5 fw-bold">Emails for latest projects posted</h3>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When a project gets posted that matches my selected skills</strong>
+            </div>
+            <h3 class="mt-4 ms-4 fs-6 fw-bold">Email frequency</h3>
+           <div class="first-name ms-4 d-block">
+                <select name="languauge" class="fs-6">
+                    <option value="">Daily</option>
+                    <option value="">Weekly</option>
+                    <option value="">Monthly</option>
+                    <option value="">Every hour</option>
+                    <option value="">Every 4 hour</option>
+                    <option value="">Every 6 hour</option>
+                    <option value="">Every 12 hour</option>
+                </select>
+            </div>
+            <hr class="mt-4">
+            <h3 class="mt-4 ms-4 fs-5 fw-bold">Emails for latest projects posted</h3>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When an employer is interested in hiring me</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When a local job in my area gets posted</strong>
+            </div>
+            <hr class="mt-4">
+            <h3 class="mt-4 ms-4 fs-5 fw-bold">Digest emails for messages</h3>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When you receive a private message from a contact</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When you receive a message about a project or contest</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">
+                    When you receive a message from Freelancer.com staff</strong>
+            </div>
+            <hr class="mt-4">
+            <h3 class="mt-4 ms-4 fs-5 fw-bold">Push notifications for workspaces</h3>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When a new post is posted in a workspace you are a member of</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When a new comment is posted on a post you are following</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When you are mentioned in a new comment</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When someone likes your post or comment</strong>
+            </div>
+            <hr class="mt-4">
+            <h3 class="mt-4 ms-4 fs-5 fw-bold">Push notifications for tasklists</h3>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">Tasklist push notifications</strong>
+            </div>
+            <hr class="mt-4">
+            <h3 class="mt-4 ms-4 fs-5 fw-bold">Individual Emails</h3>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">News and announcements from Freelancer.com</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">You are awarded a project</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">A freelancer requests you to release a milestone payment</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">We notify you of the top bidder for your project</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">We notify you of the latest activity regarding Freemarket</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">A freelancer requests you as a contact</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When you are invited to a group</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">When you are invited to a tasklist</strong>
+            </div>
+            <hr class="mt-4">
+            <h3 class="mt-4 ms-4 fs-5 fw-bold">Other Emails</h3>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">Marketing emails</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">Freelancer.com deals</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">Monthly newsletter</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">Weekly Community Digest</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">Referral Program Notifications</strong>
+            </div>
+            <hr class="mt-4">
+            <h3 class="mt-4 ms-4 fs-4 fw-bold">SMS Notifications</h3>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">SMS notifications for project updates</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 mb-5 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">SMS notifications for marketing and promotions</strong>
+            </div>
+        </div>
+        <div class="div div2" id="profbtn2">
+            <h3 class="mt-4 ms-4 fs-4 fw-bold">Membership</h3>
+            <hr>
+            <div class="two-inp">
+                <h3 class="mt-4 fs-5 fw-bold">Current Plans</h3>
+                <div class="name w-100 justify-content-between">
+                    <div class="first-name d-block">
+                        <label class="mt-3 fs-6 fw-bold">Free</label>
+                        <p class="fs-5">$0 USD per Month</p>
+                        <button class="btn btn-white lastbtn-prof fw-bolder fs-6">
+                            Manage
+                        </button>
+                    </div>
+                    <div class="first-name d-block">
+                        <label class="mt-3 fs-6 fw-bold">Billing information</label>
+                        <p class="fs-6">
+                            <a href="">View Transaction</a>
+                            |
+                            <a href="">Manage Payment</a>
+                        </p>
+                    </div>
+                </div>
+           </div>   
+            <div class="green-mem">
+                <span class="fs-6 ms-3 py-2">You are eligible for a free Plus Membership. To claim your free 1 month trial, <a href="">click here.</a></span>
+            </div>
+        </div>
+        <div class="div div3" id="profbtn3">
+            <h3 class="mt-4 ms-4 fs-4 fw-bold">Password</h3>
+           <hr>
+           <h3 class="mt-4 ms-4 fs-4 fw-bold">Change Password</h3>
+            <div class="first-name d-block">
+                <label class="mt-3 ms-4 fs-6 fw-bold">Current Password</label>
+                <input type="text" class="fs-6 ms-4 mt-1 ps-3" required>
+                <label class="mt-3 ms-4 fs-6 fw-bold">New Password</label>
+                <input type="text" class="fs-6 ms-4 mt-1 ps-3" required>
+                <label class="mt-3 fs-6 ms-4 fw-bold">Confirm Password</label>
+                <input type="text" class="fs-6 ms-4 mt-1 ps-3" required>
+            </div>
+            <hr class="mt-4">
+            <button class="btn btn-primary fw-bolder fs-6 ms-4 mt-2 mb-4">
+                Save Settings
+            </button>
+        </div>
+        <div class="div div4" id="profbtn4">
+            <h3 class="mt-4 ms-4 fs-4 fw-bold">Payment & Financials</h3>
+           <hr>
+           <h3 class="mt-4 ms-4 fs-4 fw-bold">Payment Methods</h3>
+           <button class="btn btn-white lastbtn-prof fw-bolder ms-4 mt-4 fs-6">
+                + Add Payment Method
+            </button>
+            <hr class="mt-4">
+            <h3 class="mt-4 ms-4 fs-4 fw-bold">Finance Settings</h3>
+            <h3 class="mt-5 ms-4 fs-6 fw-bold">My Currency</h3>
+            <div class="first-name mt-3 d-block">
+                <select name="languauge" class="fs-6 ms-4">
+                    <option value="">USD</option>
+                    <option value="">NZD</option>
+                    <option value="">AUD</option>
+                    <option value="">GBP</option>
+                    <option value="">HKD</option>
+                    <option value="">SGD</option>
+                    <option value="">EUR</option>
+                    <option value="">CAD</option>
+                    <option value="">INR</option>
+                </select>
+            </div>
+            <button class="btn btn-primary fw-bolder fs-6 ms-4 mt-4 mb-4">
+                Save Settings
+            </button>
+        </div>
+        <div class="div div5" id="profbtn5">
+            <h3 class="mt-4 ms-4 fs-4 fw-bold">Account Security</h3>
+           <hr>
+           <div class="factor ms-4 mt-3 w-75 d-flex align-items-center">
+            <i class="fa-solid fa-circle-exclamation fs-4"></i>
+            <h3 class="ms-2 mt-1">Two Factor Authentication</h3>
+           </div>
+           <p class="ms-4 mt-5 fs-6">Your account does not have two-factor authentication turned on.</p>
+           <p class="mx-4 mt-5 fs-6">Two-factor authentication ensures that only devices you trust are able to access your Freelancer.com account. Whenever a new device attempts to login to your account, you will be required to confirm the login by using a code sent to your email address or phone number.</p>
+           <div class="btn-aprt d-flex align-items-center justify-content-between">
+            <a href="" class="fs-6">Learn More</a>
+            <button class="btn btn-primary fw-bolder fs-6 ms-4 mt-4 mb-4">
+                Get Started
+            </button>
+           </div>
+           <hr class="mt-4">
+           <h3 class="mt-5 ms-4 fs-4 fw-bold">Your Sessions</h3>
+           <p class="ms-4 mt-5 mb-4 fs-6">There are no devices to show.</p>
+        </div>
+        <div class="div div6" id="profbtn6">
+            <h3 class="mt-4 ms-4 fs-4 fw-bold">Trust & Verification</h3>
+            <hr>
+            <h3 class="mt-5 ms-4 fs-5 fw-bold">What is trust score?</h3>
+            <p class="fs-6 mx-4 trust">The Freelancer Trust Score is at the core of how we handle verification, trust, and payments. The Trust Score is a value that indicates to what extent we have been able to verify who a user says they are. Employers and freelancers who are the safest to work with are those who put in more effort to verify themselves to become highly trusted users. <a href="">Learn more.</a></p>
+            <hr class="mt-4">
+            <div class="prof6div1 mt-5"> 
+                <div class="cli-trust d-flex justify-content-evenly align-items-center">
+                    <div class="circle-pri bg-primary">
+                        <span class="material-symbols-outlined fs-5 fw-bolder text-white">check</span>
+                    </div>
+                    <div class="long-div bg-primary"></div>
+                    <div class="circle-pri bg-primary">
+                        <span class="material-symbols-outlined fs-5 fw-bolder text-white">check</span>
+                    </div>
+                    <div class="long-div bg-primary"></div>
+                    <div class="bord-cir d-flex align-items-center">
+                        <div class="circle-pri-sm bg-primary">
+                            <span class="fs-5 fw-bolder text-white">3</span>
+                        </div>
+                    </div>
+                    <div class="long-div"></div>
+                    <div class="circle-pri">
+                        <span class="fs-5 fw-bolder text-white">4</span>
+                    </div>
+                </div>
+                <p class="fs-6 mt-5 text-center">CURRENT TRUST SCORE: <b>55</b></p>
+                <p class="fs-6 text-center">STRENGHT: <b>GOOD</b></p>
+            </div>
+            <hr class="mt-4">
+            <div class="prof6div2 align-items-center justify-content-between mt-5">
+                <h3 class="fs-5 fw-bold">Email Address</h3>
+                <div class="left-content d-flex align-items-center">
+                    <h3 class="fs-6 fw-bold text-success">VERIFIED</h3> 
+                    <div class="point-cir ms-3 bg-primary d-flex align-items-center justify-content-center">
+                        <span class="fs-6 fw-bold text-white">5 POINT</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="prof6div2 align-items-center justify-content-between mt-5">
+                <h3 class="fs-5 fw-bold">Phone Number</h3>
+                <div class="left-content d-flex align-items-center">
+                    <h3 class="fs-6 fw-bold text-success">VERIFIED</h3> 
+                    <div class="point-cir ms-3 bg-primary d-flex align-items-center justify-content-center">
+                        <span class="fs-6 fw-bold text-white">10 POINT</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="prof6div2 align-items-center justify-content-between mt-5">
+                <h3 class="fs-5 fw-bold">Facebook</h3>
+                <div class="left-content d-flex align-items-center">
+                    <span><a href="" class="fs-6">Disconnect Facebook</a></span>
+                    <h3 class="fs-6 ms-3 fw-bold text-success">VERIFIED</h3> 
+                    <div class="point-cir ms-3 bg-primary d-flex align-items-center justify-content-center">
+                        <span class="fs-6 fw-bold text-white">20 POINT</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="prof6div2 align-items-center justify-content-between mt-5">
+                <h3 class="fs-5 fw-bold">Linkedin</h3>
+                <div class="left-content d-flex align-items-center">
+                    <span><a href="" class="fs-6">Disconnect Linkedin</a></span>
+                    <h3 class="fs-6 ms-3 fw-bold text-success">VERIFIED</h3> 
+                    <div class="point-cir ms-3 bg-primary d-flex align-items-center justify-content-center">
+                        <span class="fs-6 fw-bold text-white">20 POINT</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="prof6div2 align-items-center justify-content-between my-5">
+                <h3 class="fs-5 fw-bold">Authenticate Debit or Credit Card</h3>
+                <div class="left-content d-flex align-items-center">
+                    <button class="btn btn-white lastbtn-prof fw-bold fs-6">
+                        Authenticate Debit or Credit Card
+                    </button>
+                    <div class="point-cir1 ms-3 bg-white d-flex align-items-center justify-content-center">
+                        <span class="fs-6 fw-bold">45 POINTS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div div7" id="profbtn7">
+            <h3 class="mt-4 ms-4 fs-4 fw-bold">Account</h3>
+            <hr>
+            <h3 class="mt-5 ms-4 fs-4 fw-bold">Directory and Follow Settings</h3>
+            <div class="slider-opt ms-4 mt-4 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">List me on the Freelancer directory, allowing Employers to hire me directly for projects</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">Allow Freelancers to follow me, notifying them of projects and contests I've posted</strong>
+            </div>
+            <div class="slider-opt ms-4 mt-3 d-flex">
+                <div class="switch">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <strong class="ms-4 fs-6">Hide price on reviews on projects with sealed bids</strong>
+            </div>
+            <hr class="mt-5">
+            <h3 class="mt-4 ms-4 fs-6 fw-bold">Account Type</h3>
+            <form id="optionsForm" class="w-75 ms-4">
+                <label for="option1" class="mt-1 fs-6">
+                    <input type="radio" id="option1" name="options" value="option1" checked>
+                    Work
+                </label>
+                <br>
+            
+                <label for="option2" class="mt-1 fs-6">
+                    <input type="radio" id="option2" name="options" value="option2">
+                    Hire
+                </label>
+            </form>
+            <hr class="mt-5">
+            <h3 class="mt-4 ms-4 fs-6 fw-bold">Style</h3>
+            <form id="optionsForm" class="w-75 ms-4">
+                <label for="option1" class="mt-1 fs-6">
+                    <input type="radio" id="option1" name="options" value="option1" checked>
+                    Light
+                </label>
+                <br>
+            
+                <label for="option2" class="mt-1 fs-6">
+                    <input type="radio" id="option2" name="options" value="option2">
+                    Dark
+                </label>
+                <br>
+
+                <label for="option2" class="mt-1 fs-6">
+                    <input type="radio" id="option2" name="options" value="option2">
+                    System
+                </label>
+            </form>
+            <hr class="mt-5">
+            <h3 class="mt-4 ms-4 fs-4 fw-bold">Deactivate or Delete Account</h3>
+            <div class="mini-box">
+                <h3 class="mt-4 ms-4 fs-6 fw-bold">Deactivate Account</h3>
+                <p class="ms-4 mt-4 fs-6">Deactivating your account will cause your profile and listings to disappear, and you will not receive any notifications from us. This can be undone later.</p>
+                <button class="btn btn-white lastbtn-prof fw-bolder ms-4 mt-3 mb-4 fs-6">
+                    Deactivate Account
+                </button>
+            </div>
+            <h3 class="mt-4 ms-4 fs-6 fw-bold">Request Permanent Deletion</h3>
+            <p class="ms-4 mt-4 fs-6">Deleting your account is permanent. When you delete your account, all of your content, transaction history and messages will be permanently erased and you will not be able to retrieve them.</p>
+            <button class="btn btn-white lastbtn-prof fw-bolder ms-4 mt-3 mb-4 fs-6">
+                Delete Account
+            </button>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="futer w-100">
+        <div class="col-foot d-flex h-100 justify-content-between m-auto flex-wrap">
+            <div class="foot1 h-25">
+                <img src="freelogowhite.png" alt="" class="my-5 ms-3">
+                <div class="foot-wrd d-flex ms-3 align-items-center">
+                    <span class="material-symbols-outlined fs-4 text-white">language</span>
+                    <a href="" class="fs-6 ms-2">US(International) / English</a>
+                </div>
+                <div class="foot-wrd d-flex mt-4 ms-3 align-items-center">
+                    <span class="material-symbols-outlined fs-4 text-white">help</span>
+                    <a href="" class="fs-6 ms-2">Help & Support</a>
+                </div>
+                <div class="foot-wrd d-flex mt-4 ms-3 align-items-center">
+                    <span class="material-symbols-outlined fs-4 text-white">accessibility_new</span>
+                    <a href="" class="fs-6 ms-2">Accesibility</a>
+                </div>
+            </div>
+            <div class="col-foot2 d-flex justify-content-between">
+                <div class="foot2">
+                    <p class="fs-5 fw-bolder text-white mt-5 ms-4">Freelancer</p>
+                    <ul class="text-white fs-6">
+                        <li><a href="">Categories</a></li>
+                        <li><a href="">Project</a></li>
+                        <li><a href="">Contests</a></li>
+                        <li><a href="">Freelancers</a></li>
+                        <li><a href="">Enterprise</a></li>
+                        <li><a href="">AI Development</a></li>
+                        <li><a href="">Membership</a></li>
+                        <li><a href="">Preferred Freelancer</a></li>
+                        <li><a href="">Program</a></li>
+                        <li><a href="">Project Management</a></li>
+                        <li><a href="">Local Jobs</a></li>
+                        <li><a href="">Photo Anywhere</a></li>
+                        <li><a href="">Showcase</a></li>
+                        <li><a href="">API for Developers</a></li>
+                        <li><a href="">Get Verified</a></li>
+                        <li><a href="">Desktop App</a></li>
+                    </ul>
+                </div>
+                <div class="foot3">
+                    <p class="fs-5 fw-bolder text-white mt-5 ms-4">About</p>
+                    <ul class="text-white fs-6">
+                        <li><a href="">About us</a></li>
+                        <li><a href="">How it works</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Investor</a></li>
+                        <li><a href="">Sitemap</a></li>
+                        <li><a href="">Stories</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Award</a></li>
+                        <li><a href="">Press Release</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="foot4">
+                    <p class="fs-5 fw-bolder text-white mt-5 ms-4">Terms</p>
+                    <ul class="text-white fs-6">
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Copyright Policy</a></li>
+                        <li><a href="">Code of Conduct</a></li>
+                        <li><a href="">Fees and Charges</a></li>
+                    </ul>
+                </div>
+                <div class="foot5">
+                    <p class="fs-5 fw-bolder text-white mt-5 ms-4">Partners</p>
+                    <ul class="text-white fs-6">
+                        <li><a href="">Escrow.com</a></li>
+                        <li><a href="">Loadshift</a></li>
+                        <li><a href="">Warrior</a></li>
+                    </ul>
+                </div>
+                <div class="foot6 d-block me-4">
+                    <p class="fs-5 fw-bolder text-white mt-5 ms-4">Apps</p>
+                    <div class="two-btn mt-3">
+                        <button onclick="window.location.href='https://www.freelancer.com/download'" class="ms-3 btn1"></button><br>
+                        <button onclick="window.location.href='https://www.freelancer.com/download'" class="ms-3 mt-4 btn2"></button>
+                    </div>
+                    <div class="media-icon w-100 mt-4">
+                        <i class="fa-brands fa-facebook fs-4 ms-4"></i>
+                        <i class="fa-brands fa-twitter fs-4 ms-4"></i>
+                        <i class="fa-brands fa-youtube fs-4 ms-4"></i>
+                        <i class="fa-brands fa-instagram fs-4 ms-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5 foot-line">
+        <div class="three-foot d-flex flex-wrap">
+            <div class="lst-foot1">
+                <p class="text-white fs-6 fw-bolder mt-2">76,642,972</p>
+                <p class="text-white mt-2">Registered Users</p>
+            </div>
+            <div class="lst-foot1">
+                <p class="text-white fs-6 fw-bolder mt-2">24,161,048</p>
+                <p class="text-white mt-2">Total Jobs Posted</p>
+            </div>
+            <div class="lst-foot2">
+                <p class="text-white end-txt">Freelancer ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759)
+                    Copyright © 2024 Freelancer Technology Pty Limited (ACN 142 189 759)</p>
+            </div>
+        </div><br>
+    </footer>
+</body>
+</html>
